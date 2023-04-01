@@ -11,7 +11,7 @@ function Spending() {
                 <h3>Total this month: </h3>
                 <h1>$478.33</h1>
             </div>
-            <h3 id="percent">+2.4% <br></br>from last month</h3>
+            <h3 id="percent">+2.4% <br></br><span>from last month</span></h3>
         </div>
       </section>
     )

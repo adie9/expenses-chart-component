@@ -77,15 +77,28 @@ body {
     @include centered();
 
     
-    padding: 20px;
+    padding: 40px 20px;
     margin-top: 20px;
 
     .spending-footer {
         display: flex;
         justify-content: space-between;
 
+        .spending-values {
+            
+            h3 {
+                font-weight: 300;
+            }
+        }
+
         #percent {
             text-align: right;
+            position: relative;
+            top: 30px;
+
+            span {
+                font-weight: 300;
+            }
         }
     }
     

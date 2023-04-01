@@ -41,15 +41,23 @@ body {
   color: hsl(25, 47%, 15%);
   background-color: white;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   margin-top: 20px;
 }
 .spending-container .spending-footer {
   display: flex;
   justify-content: space-between;
 }
+.spending-container .spending-footer .spending-values h3 {
+  font-weight: 300;
+}
 .spending-container .spending-footer #percent {
   text-align: right;
+  position: relative;
+  top: 30px;
+}
+.spending-container .spending-footer #percent span {
+  font-weight: 300;
 }
 
 #chart {

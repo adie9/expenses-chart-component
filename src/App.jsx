@@ -17,10 +17,10 @@ const data = {
 
 function App() {
   return (
-    <div className="container">
+    <main className="container">
       <Balance />
       <Spending />
-    </div>
+    </main>
   )
 }
 
