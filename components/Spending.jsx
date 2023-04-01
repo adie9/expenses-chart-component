@@ -1,11 +1,28 @@
-import React from "react"
+import React, { useState } from "react"
 import Chart from "../components/Chart"
+import Data from "../data.json"
 
 function Spending() {
+  const [userData, setData] = useState({
+    labels: ['monday', 'tuesday', 'wednesday', 'thursday',
+                'friday', 'saturday', 'sunday'],
+    datasets: [
+        {
+            data: [25, 55, 40, 30, 20, 35, 10],
+            backgroundColor: ['rgba(255, 0, 0, 0.5)'],
+            borderWidth: 1,
+            color: '#eb755d'
+        }
+    ]
+  })
+  
+  
+
+
     return (
       <section className="spending-container">
         <h1>Spending - Last 7 Days</h1>
-        <Chart />
+        <Chart chartData={userData}  />
         <div class="spending-footer">
             <div class="spending-values">
                 <h3>Total this month: </h3>

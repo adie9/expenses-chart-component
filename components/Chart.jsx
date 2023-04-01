@@ -1,9 +1,12 @@
 import React from "react"
+import { Bar } from "react-chartjs-2"
+import {Chart as ChartJS} from 'chart.js/auto'
 
-function Chart() {
-
+function Chart({chartData}) {
     return (
-      <canvas id="chart"></canvas>
+      <div id="chart">
+        <Bar data={chartData} />
+      </div>
     )
   }
 
