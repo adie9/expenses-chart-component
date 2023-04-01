@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/images/expenses-chart-component.png)
+![](./public/images/expneses-chart-component.png)
 
 ### Links
 
@@ -92,7 +92,7 @@ plan to learn some of the other React hooks.
 ### Useful resources
 
 - [Chart.js](https://www.chartjs.org/) - This helped me implement a chart basesd on the json data.
-- [React.dev](https://react.dev/) - Updated React docs that helped me gain an understanding of what React has to offer
+- [React.dev](https://react.dev/) - Updated React docs that helped me gain an understanding of what React has to offer.
 
 
 ## Author
