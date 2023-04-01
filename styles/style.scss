@@ -33,14 +33,23 @@ body {
     background-color: $cream;
 }
 
+.container {
+    margin: 20px auto;
+    width: 400px;
+    
+}
+
+
+// Balance Section styles
 .balance-container {
     @include box-theme(white, $pr-soft-red);
     @include centered();
 
     display: flex;
     justify-content: space-between;
-    width: 375px;
+    
     height: 100px;
+    padding: 0px 20px;
 
     .balance-values {
         display: flex;
@@ -48,11 +57,10 @@ body {
         justify-content: center;
 
         h1 {
-            font-size: 1.8em;
+            
         }
 
-        h2 {
-            font-size: 1.2em;
+        h3 {
             font-weight: 300;
         }
     }
@@ -60,6 +68,32 @@ body {
     img {
         width: 70px;
     }
-
     
 }
+
+// Spending Section styles
+.spending-container {
+    @include box-theme($dark-brown, white);
+    @include centered();
+
+    
+    padding: 20px;
+    margin-top: 20px;
+
+    .spending-footer {
+        display: flex;
+        justify-content: space-between;
+
+        #percent {
+            text-align: right;
+        }
+    }
+    
+}
+
+// Chart styles
+#chart {
+    width: 350px;
+    height: 300px;
+}
+

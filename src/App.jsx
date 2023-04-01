@@ -1,22 +1,23 @@
-function Balance() {
-  return (
-    <div className="balance-container">
-        <div className="balance-values">
-          <h2>My balance</h2>
-          <h1>$921.48</h1>
-        </div>
-        <img src="../images/logo.svg" alt="logo"></img>
-    </div>
-  )
-}
+import React from "react"
+import Balance from "../components/Balance"
+import Spending from "../components/Spending"
 
-function Spending() {
 
+const data = {
+  labels: ['monday', 'tuesday', 'wednesday', 'thursday',
+              'friday', 'saturday', 'sunday'],
+  datasets: [
+      {
+          data: [25, 55, 40, 30, 20, 35, 10],
+          backgroundColor: ['rgba(255, 0, 0, 0.5)'],
+          borderWidth: 1,
+      }
+  ]
 }
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Balance />
       <Spending />
     </div>

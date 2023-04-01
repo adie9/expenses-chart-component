@@ -9,6 +9,11 @@ body {
   background-color: hsl(27, 66%, 92%);
 }
 
+.container {
+  margin: 20px auto;
+  width: 400px;
+}
+
 .balance-container {
   border-radius: 15px;
   color: white;
@@ -16,21 +21,38 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 375px;
   height: 100px;
+  padding: 0px 20px;
 }
 .balance-container .balance-values {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.balance-container .balance-values h1 {
-  font-size: 1.8em;
-}
-.balance-container .balance-values h2 {
-  font-size: 1.2em;
+.balance-container .balance-values h3 {
   font-weight: 300;
 }
 .balance-container img {
   width: 70px;
+}
+
+.spending-container {
+  border-radius: 15px;
+  color: hsl(25, 47%, 15%);
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+.spending-container .spending-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.spending-container .spending-footer #percent {
+  text-align: right;
+}
+
+#chart {
+  width: 350px;
+  height: 300px;
 }/*# sourceMappingURL=style.css.map */
