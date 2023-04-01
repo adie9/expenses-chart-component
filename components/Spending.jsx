@@ -16,10 +16,10 @@ function Spending({chartData}) {
       <Chart chartData={chartData} />
       <div class="spending-footer">
           <div class="spending-values">
-              <h3>Total this month: </h3>
+              <h3>Total this week: </h3>
               <h1>${total}</h1>
           </div>
-          <h3 id="percent">+2.4% <br></br><span>from last month</span></h3>
+          <h3 id="percent">+2.4% <br></br><span>from last week</span></h3>
       </div>
     </section>
   )
