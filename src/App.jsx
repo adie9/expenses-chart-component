@@ -14,9 +14,8 @@ function App() {
         {
             label: '$',
             data: amounts,
-            backgroundColor: ['rgba(255, 0, 0, 0.5)'],
+            backgroundColor: ['#eb755d'],
             borderWidth: 1,
-            color: '#eb755d'
         }
     ]
   };
