@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import Balance from "../components/Balance"
 import Spending from "../components/Spending"
+import Footer from "../components/Footer"
 import Data from "../data.json"
 
 
@@ -29,6 +30,7 @@ function App() {
     <main className="container">
       <Balance  />
       <Spending chartData={data} />
+      <Footer />
     </main>
   )
 }
