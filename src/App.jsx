@@ -15,6 +15,7 @@ function App() {
             label: '$',
             data: amounts,
             backgroundColor: ['#eb755d'],
+            hoverBackgroundColor: ['#ff9b87'],
             borderWidth: 1,
         }
     ]
