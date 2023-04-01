@@ -5,14 +5,15 @@ import Data from "../data.json"
 
 
 function App() {
+  const days = Data.map(data => data.day)
+  const amounts = Data.map(data => data.amount)
   
   const data = {
-    labels: ['monday', 'tuesday', 'wednesday', 'thursday',
-                'friday', 'saturday', 'sunday'],
+    labels: days,
     datasets: [
         {
             label: '$',
-            data: [25, 55, 40, 30, 20, 35, 10],
+            data: amounts,
             backgroundColor: ['rgba(255, 0, 0, 0.5)'],
             borderWidth: 1,
             color: '#eb755d'
