@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+}
+
+.balance-container {
+  border-radius: 15px;
+  color: white;
+  background-color: hsl(10, 79%, 65%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  height: 100px;
+}
+.balance-container .balance-values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.balance-container .balance-values h1 {
+  font-size: 1.8em;
+}
+.balance-container .balance-values h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.balance-container img {
+  width: 70px;
+}/*# sourceMappingURL=style.css.map */

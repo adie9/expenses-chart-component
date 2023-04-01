@@ -1,0 +1,65 @@
+// Primary Colors
+$pr-soft-red: hsl(10, 79%, 65%);
+$pr-cyan: hsl(186, 34%, 60%);
+
+// Neutral Colors
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
+
+// Font Size
+$body-fs: 18px;
+
+// Mixins
+@mixin box-theme($color, $bg-color) {
+    border-radius: 15px;
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin centered() {
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: $body-fs;
+    font-family: 'DM Sans', sans-serif;
+    background-color: $cream;
+}
+
+.balance-container {
+    @include box-theme(white, $pr-soft-red);
+    @include centered();
+
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    height: 100px;
+
+    .balance-values {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+    }
+
+    img {
+        width: 70px;
+    }
+
+    
+}
